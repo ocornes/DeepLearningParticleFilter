@@ -116,8 +116,7 @@ def animate(i):
     return_arr = []
     for double_pendulum in arr:
         thisx = [0, double_pendulum.pendulum1.x[i], double_pendulum.pendulum2.x[i]]
-        thisy = [0, double_pendulum.pendulum1.y[i],
-                          double_pendulum.pendulum2.y[i]]
+        thisy = [0, double_pendulum.pendulum1.y[i], double_pendulum.pendulum2.y[i]]
         
         double_pendulum.line.set_data(thisx, thisy)
         double_pendulum.time_text.set_text(double_pendulum.time_template % (i*double_pendulum.dt))
