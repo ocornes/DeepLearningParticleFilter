@@ -148,7 +148,7 @@ initial_theta = 90
 dtheta = .5
 
 #creates pendula 
-for _ in range(1):
+for _ in range(10):
     pendula.append(DoublePendulum(L1=L1,L2=L2,y0=[initial_theta-initial_dtheta, 0,-10,0], tmax=15, color=random_hex()))
     initial_dtheta += dtheta
 
